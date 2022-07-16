@@ -94,6 +94,7 @@ body {
     font-weight: lighter;
     flex-grow:1;
     max-width: 90%;
+    flex-wrap: wrap;
 }
 
 .resumebutton {
@@ -110,32 +111,112 @@ body {
 
 }
 
-#caseStudies {
+/* Work Section */ 
+
+#workGridHomepage
+{
     display: grid;
     grid-template-areas:
-    "imagecase1" "imagecase2" "imagecase3";
-    
-}
-#imagecase1{
-    width: 500px;
-}
-
-#imagecase2{
-   width: 500px;
+    "imagework1 pwork1"
+     "imagework2 pwork2" 
+     "imagework3 pwork3";
+    grid-template-rows: 30% 30% 30% ;
+    grid-template-columns: 40% 60% ;
+   
 }
 
-#imagecase3{
-  width: 500px;
+#workGrid {
+    display: grid;
+    grid-template-areas:
+    "imagework1" "pwork1"
+     "imagework2" "pwork2" 
+     "imagework3" "pwork3" 
+     "imagework4" "pwork4";
+    grid-template-rows: 30% 30% 30% 30% ;
+    grid-template-columns: 40% 60% ;
+   
+}
+
+#imagework1{
+    grid-area: imagework1;
+}
+#pwork1{
+    grid-area: pwork1;
+}
+#imagework2{
+    grid-area: imagework2;
+}
+#pwork2{
+    grid-area: pwork2;
+}
+#imagework3{
+    grid-area: imagework3;
+}
+#pwork3{
+    grid-area: pwork3;
+}
+#imagework4{
+    grid-area: imagework4;
+}
+#pwork4{
+    grid-area: pwork4;
 }
 
 
+.workimage{
+    width: 70%;
+    margin-left: 100px;
+    padding-top: 60px;
+}
+.workp{
+    width:80%;
 
-/* end of homepage section */ 
+}
+#pwork1{
+    margin-left:20px;
+    width:80%;
+    margin-bottom: 50px;
+
+}
+
+.learnmorebutton{
+    background-color:#356353;
+    color: white;
+    border: none;
+    font-size: 22px;
+    margin-top: 5%;
+    padding: 15px;
+    width: 200px;
+
+}
+.viewallbutton{
+    background-color: transparent;
+    border: #356353 solid 3px;
+    color:#356353;
+    font-size: 22px;
+    margin-top: 5%;
+    padding: 15px;
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+
+}
+#viewall{
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Work Section */ 
+
+/* My Design Process Section */ 
+
+
+/* End of homepage section */ 
 
 
 /* My Skills Page */ 
 
-#mySkills{
+#topsectionskillsgrid{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -143,23 +224,21 @@ body {
 
 #skillshero{
     flex-grow: 1;
-    max-width: 38%;
-
+    max-width: 40%;
 }
 
 .teamimage {
-    flex-grow: 1;
-    max-width: 560px;
+    width: 100%;
+    object-fit: cover;
     max-height: 300px;
 
 }
 
 #pskillshero{
     flex-grow: 1;
-    flex-grow: 1;
     background-color: #356353;
     color: white;
-    width: 800px;
+    width: 60%;
     height: 300px;
   
 
@@ -189,29 +268,43 @@ h3{
 
 .skill1{ 
   width: 33%;
+  padding:20px;
 
 
 }
 .skill1image{
     width: 50%;
+    height: 150px;
 }
 
 .skill2{
     width: 33%;
+    padding:20px;
 }
 .skill2image{
     width: 50%;
+    height: 150px;
 }
 
 .skill3{
     width: 33%;
+    padding:20px;
 }
 .skill3image{
     width: 50%;
+    height: 150px;
 }
 
 
 /* End Skills Page */
+
+h4{
+    color:#333333;
+    font-size: 24px;
+    font-weight: 200;
+    padding-top: 60px;
+
+}
 
 h5 {
     font-family: 'Petit Formal Script', cursive;
@@ -225,6 +318,12 @@ h6 {
     margin-left: 30px;
     font-size: 18px;
     font-weight: lighter;
+
+}
+
+p{
+    color:#333333;
+    font-size: 17px;
 
 }
 
