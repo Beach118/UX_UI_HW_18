@@ -42,7 +42,8 @@ body {
     font-size: 24px;
     justify-content: flex-end;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
+    padding: 10px;
     font-weight: lighter;
 
 }
@@ -76,8 +77,9 @@ body {
 
 }
 
-h1 {
+.h1homebio {
     color: white;
+    margin-top: 50px;
     margin-left: 30px;
     font-size: 32px;
     font-weight: lighter;
@@ -108,9 +110,108 @@ h1 {
 
 }
 
-#imageGallery {
-    height: 400px;
+#caseStudies {
+    display: grid;
+    grid-template-areas:
+    "imagecase1" "imagecase2" "imagecase3";
+    
 }
+#imagecase1{
+    width: 500px;
+}
+
+#imagecase2{
+   width: 500px;
+}
+
+#imagecase3{
+  width: 500px;
+}
+
+
+
+/* end of homepage section */ 
+
+
+/* My Skills Page */ 
+
+#mySkills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#skillshero{
+    flex-grow: 1;
+    max-width: 38%;
+
+}
+
+.teamimage {
+    flex-grow: 1;
+    max-width: 560px;
+    max-height: 300px;
+
+}
+
+#pskillshero{
+    flex-grow: 1;
+    flex-grow: 1;
+    background-color: #356353;
+    color: white;
+    width: 800px;
+    height: 300px;
+  
+
+}
+
+
+h1 {
+    color:#333333;
+    margin-left: 30px;
+    font-size: 32px;
+    font-weight: lighter;
+}
+h3{
+    color:#333333;
+    font-size: 28px;
+    font-weight: 200;
+
+}
+
+.flexContainer{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+
+}
+
+
+.skill1{ 
+  width: 33%;
+
+
+}
+.skill1image{
+    width: 50%;
+}
+
+.skill2{
+    width: 33%;
+}
+.skill2image{
+    width: 50%;
+}
+
+.skill3{
+    width: 33%;
+}
+.skill3image{
+    width: 50%;
+}
+
+
+/* End Skills Page */
 
 h5 {
     font-family: 'Petit Formal Script', cursive;
@@ -152,7 +253,7 @@ h6 {
     justify-items: left;
     justify-content: space-between;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
     padding-bottom: 40px;
     font-weight: lighter;
 }
